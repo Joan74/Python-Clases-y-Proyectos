@@ -1,4 +1,6 @@
-
+import os
+print()
+os.system("clear")
 
 print("\n")
 print("############################ BIENBENIDO/A AL EXAMEN ############################")
