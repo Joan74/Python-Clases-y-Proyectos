@@ -1,0 +1,16 @@
+nombre = "Juan Manuel"
+
+# Funiones generales
+print(type(nombre))
+
+# detectar el tipado isinstance
+
+comprobar = isinstance(nombre, str)
+if comprobar:
+    print("Esa vaiable es un string")
+else:
+    print("Es una cadena")
+
+if not isinstance(nombre, float):
+    print("La variable no es un numero con decimales")
+    
