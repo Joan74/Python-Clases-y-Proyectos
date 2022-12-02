@@ -2,7 +2,7 @@
 # FOR
 
 for variable in elemento_iterable (LISTA, RANGO ETC)
-    BLOQUE INSTRUCCIONES
+    BLOQUE INSTRUCCIONES 
 Para cortar un bucle escribir break   
 
 
