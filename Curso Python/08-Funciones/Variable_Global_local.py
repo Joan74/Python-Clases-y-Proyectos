@@ -19,7 +19,7 @@ print(frase)
 
 
 def holaMundo():
-    frase = "Hola mundo!!!"
+    frase = "Hola Mundo!!!"
     print("Dentro de la funcion")
     print(frase)
 
@@ -29,8 +29,8 @@ def holaMundo():
     global ciudad  # Convierte la variable en global
     ciudad = "Les Fonts"
 
-    return "Dato devuelto " + str(year)# Lo devuelve a global
+    return "Dato devuelto " + str(year)  # Lo devuelve a global
 
 
 print(holaMundo())
-print("Fuera: ",ciudad)
+print("Fuera: ", ciudad)

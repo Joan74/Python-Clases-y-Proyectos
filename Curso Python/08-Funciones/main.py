@@ -197,7 +197,7 @@ def getApellido(apellidos):
     return texto
 
 
-print(getNombre("Juanma"), getApellido("Barrio"))
+print(getNombre("Juanm Manuel"), getApellido("Barrio"))
 
 # esta opcion no hara falta tanto codigo
 
