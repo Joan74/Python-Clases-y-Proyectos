@@ -46,3 +46,4 @@ print("\n#############LISTADO DE PELICULAS #############")
    
 for pelicula in peliculas: # Mostrara el indice en columna
     print(f"{peliculas.index(pelicula) + 1}. {pelicula}")
+    
