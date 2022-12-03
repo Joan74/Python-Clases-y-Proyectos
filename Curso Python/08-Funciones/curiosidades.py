@@ -7,14 +7,12 @@ y hacer el print fuera de la funcion
 
 """
 
-
 def mi_funcion(nombre):
     return "Hola que tal " + nombre
 
 
 def mi_seguna_funcion(apellidos):
     return "Bienbenido Sr. " + apellidos
-
 
 nombre = "Juan Manuel"
 apellidos = "Barrio"
