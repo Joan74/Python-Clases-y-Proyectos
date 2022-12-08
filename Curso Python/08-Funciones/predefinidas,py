@@ -44,11 +44,11 @@ print(frase.find("vida"))
 
 # Reemplazar palabras en un string
 
-nueva_frase = frase.replace("vida", "moto") 
+nueva_frase = frase.replace("vida", "moto")
 print(nueva_frase)
 
 # Mayusvulas y minusculas
 
 print(nombre)
-print(nombre.lower()) # en minusculas
-print(nombre.upper()) # EN MAYUSCULAS
+print(nombre.lower())  # en minusculas
+print(nombre.upper())  # EN MAYUSCULAS
