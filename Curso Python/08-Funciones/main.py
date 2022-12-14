@@ -75,7 +75,6 @@ print("-------------------------------------------")
 
 print("############ EJEMPLO 2 ############")
 
-
 def tabla(numero):
     print(f"Tabla de multiplicar {numero}")
 
@@ -85,9 +84,8 @@ def tabla(numero):
     print("\n")
 
 
-tabla(5)  # Le dices de que numero sera la tabla
-tabla(6)
-tabla(4)
+tabla(7) # Le dices de que numero sera la tabla
+
 print("-------------------------------------------")
 # EJEMPLO 3.1
 
