@@ -3,7 +3,7 @@ LISTAS (arrays)
 Son colecciones o conjuntos de datos/valores, bajo un unico
 nombre.
 Para acceder a esos valores podemos usar un indice numerico-
-
+"""
 
 pelicula = "Matrix"
 # Definir lista
@@ -46,7 +46,7 @@ print("\n#############LISTADO DE PELICULAS #############")
    
 for pelicula in peliculas: # Mostrara el indice en columna
     print(f"{peliculas.index(pelicula) + 1}. {pelicula}")
-"""
+
 
 # Listas multidimensionales
 
@@ -76,4 +76,4 @@ for contacto in contactos: # recorre todos los contacto y crea una variable cont
             
     print('\n')
 # Enseñame el numero 2 linea 0 (seria el nombre Arnau barrio)
-# print(contactos[2][0])
+print(contactos[2][0])
