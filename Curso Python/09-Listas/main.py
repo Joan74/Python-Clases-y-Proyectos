@@ -4,6 +4,13 @@ Son colecciones o conjuntos de datos/valores, bajo un unico
 nombre.
 Para acceder a esos valores podemos usar un indice numerico-
 """
+print()
+print()
+print()
+print()
+print()
+
+
 
 pelicula = "Matrix"
 # Definir lista
