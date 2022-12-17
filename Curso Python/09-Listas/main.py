@@ -4,13 +4,6 @@ Son colecciones o conjuntos de datos/valores, bajo un unico
 nombre.
 Para acceder a esos valores podemos usar un indice numerico-
 """
-print()
-print()
-print()
-print()
-print()
-
-
 
 pelicula = "Matrix"
 # Definir lista
@@ -29,7 +22,7 @@ print(variada)
 # Indices
 
 # peliculas[1] = "Lo que el viento se llevo" (Aqui cambiara el dato por el tu quieras)
-# en este caso cambaria la pelicula Reload por Loque el viento se llevo
+# en este caso cambaria la pelicula Reload por, Lo que el viento se llevo
 print(peliculas[1]) # Mostrara el indice 1 (empieza por el 0, mostraria reload)
 print(peliculas[-2]) # Lo mismo pero al ser negativo empezara a contar desde el final
 print(actores[1:3]) # Mostrara el indice del 1 al 3

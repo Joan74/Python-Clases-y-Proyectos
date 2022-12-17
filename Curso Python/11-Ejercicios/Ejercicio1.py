@@ -5,7 +5,7 @@ OK - Recorrer la lista y mostrarla
 OK - Hacer funcion que recorra lista y mostrarla por string
 OK - Ordenarla y mostrarla
 OK - Mostrar su longitud
-- Buscar algun elemento que el usuario pida por teclado
+OK - Buscar algun elemento que el usuario pida por teclado
 
   
 """
@@ -44,3 +44,5 @@ print(len(numeros))
 # Buscar algun elemento que el usuario pida por teclado
 
 busqueda = int(input("Introduce el numero: "))
+print(busqueda)
+
