@@ -19,7 +19,7 @@ numeros = [10, 50, 60, 40, 20, 30, 80, 70]
 def mostarLista(lista):
     resultado = ""
     for elemento in lista:
-        resultado += "Elemento: " +str(elemento)
+        resultado += "Elemento: " + str(elemento)
         resultado += "\n"
     return resultado
 
@@ -29,14 +29,14 @@ print("######### RECORRER Y MOSTAR #########")
 """
 for numero in numeros:
     print(numero)
-"""    
+"""
 
-print(mostarLista(numeros))    
+print(mostarLista(numeros))
 
 # Ordenar y Mostrar
 
 numeros.sort()
-print(mostarLista(numeros)) 
+print(mostarLista(numeros))
 
 # Mostrar longitud
 print(len(numeros))
@@ -44,5 +44,12 @@ print(len(numeros))
 # Buscar algun elemento que el usuario pida por teclado
 
 busqueda = int(input("Introduce el numero: "))
-print(busqueda)
 
+comprobar = isinstance(busqueda,int)
+while not comprobar or busqueda <= 0:
+    busqueda = int(input("Introduce el numero: "))
+else:
+    print(f"Has introducido {busqueda}")
+print(f"###### Buscar en la lista {busqueda} ########")
+search = numeros.index(busqueda)
+print(f"El numero buscado existe en la lista, es el indice {search }")
