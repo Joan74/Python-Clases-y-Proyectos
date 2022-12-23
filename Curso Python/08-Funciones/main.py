@@ -59,7 +59,7 @@ print()
 
 
 def mostraTuNombre(nombre, edad):
-    print(f"Tu nombe es: {nombre}")
+    print(f"Tu nombre es: {nombre}")
     if edad >= 18:
         print(f"Tienes {edad} y eres mayor de edad")
     else:
@@ -73,7 +73,7 @@ print()
 print("-------------------------------------------")
 # EJEMPLO 3
 
-print("############ EJEMPLO 2 ############")
+print("############ EJEMPLO 3 ############")
 
 def tabla(numero):
     print(f"Tabla de multiplicar {numero}")
