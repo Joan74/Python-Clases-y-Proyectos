@@ -3,7 +3,9 @@ os.system("clear")
 opcion = 0
 aciertos = 0
 fallos = 0
-print("                         ---------------------------------------------------------------------")
+nombre = input("Introduce tu nombre: ")
+print(f"\nComenzamos el test {nombre}")
+print("\n                         ---------------------------------------------------------------------")
 print("                         ------------------ TEST CIENCIAS VERDADERO O FALSO ------------------")
 print("                         ---------------------------------------------------------------------")
 
@@ -21,8 +23,6 @@ preguntas = ["Los electrones son mas pequeños que los atomos: ", "Toda la radio
 for pregunta in preguntas:
     print(f"{preguntas.index(pregunta)+1}. {pregunta}")
 print()
-nombre = input("Introduce tu nombre: ")
-print(f"\nComenzamos el test {nombre}")
 opcion = int(input(f"\nRespuesta pregunta 1: "))
 if opcion == 1:
     print("VERDADERO")
@@ -96,10 +96,10 @@ print(f"\nPreguntas acertadas : {aciertos}")
 print(f"Preguntas falladas : {fallos} ")
 if aciertos <= 4:
     print("\n-------------------------------------")
-    print("-         Test SUSPENDIDO           -")
+    print(f"      Test SUSPENDIDO {nombre}          ")
     print("-------------------------------------")
 else:
     print("\n-------------------------------------")
-    print("-          Test APROBADO            -")
+    print(f"      Test APROBADO  {nombre}          ")
     print("-------------------------------------")
 print()
