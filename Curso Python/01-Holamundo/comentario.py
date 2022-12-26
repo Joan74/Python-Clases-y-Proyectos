@@ -2,7 +2,7 @@
 
 """
 Si utlizas triple comillas se puede
-uylizar en varias lineas hasta cerrar con triple
+utlizar en varias lineas hasta cerrar con triple
 almohadillas
 
 """

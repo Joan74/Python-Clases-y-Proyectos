@@ -26,10 +26,9 @@ def mostarLista(lista):
 
 # Recorrer la lista y mostrarla
 print("######### RECORRER Y MOSTAR #########")
-"""
+
 for numero in numeros:
     print(numero)
-"""
 
 print(mostarLista(numeros))
 
@@ -45,7 +44,7 @@ print(len(numeros))
 
 busqueda = int(input("Introduce el numero: "))
 
-comprobar = isinstance(busqueda,int)
+comprobar = isinstance(busqueda, int)
 while not comprobar or busqueda <= 0:
     busqueda = int(input("Introduce el numero: "))
 else:

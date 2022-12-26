@@ -3,15 +3,13 @@ os.system("clear")
 opcion = 0
 aciertos = 0
 fallos = 0
-nombre = input("Introduce tu nombre: ")
-print(f"\nComenzamos el test {nombre}")
 print("\n                         ---------------------------------------------------------------------")
 print("                         ------------------ TEST CIENCIAS VERDADERO O FALSO ------------------")
 print("                         ---------------------------------------------------------------------")
 
 print("\n")
-print("PULSA 1 VERDADERO")
-print("PULSA 2 FALSO")
+print("Pulsa 1 VERDADERO")
+print("Pulsa 2 FALSO")
 print()
 # PREGUNTAS
 preguntas = ["Los electrones son mas pequeños que los atomos ", "Toda la radioactidad es producida por el Hombre ",
@@ -21,7 +19,7 @@ preguntas = ["Los electrones son mas pequeños que los atomos ", "Toda la radioa
              "El sol gira alrededor de los planetas"]
 
 for pregunta in preguntas:
-    print(f"{preguntas.index(pregunta)+1}. {pregunta}")
+    print(f"\n{preguntas.index(pregunta)+1}. {pregunta}")
 print()
 # RESPUESTAS
 opcion = int(input(f"\nRespuesta pregunta 1: "))
