@@ -13,7 +13,7 @@ print(texto_unido)
 """
 \n   hara un salto de linea
 \t   hara una tabulacion
-\r   no mos trara lavariable anterior
+\r   no mostrara la variable anterior
      ejemplo:
 
      texto_unido = mi_texto + " \n " + mi_texto2
