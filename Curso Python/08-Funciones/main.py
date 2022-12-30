@@ -79,8 +79,8 @@ def tabla(numero):
     print(f"Tabla de multiplicar {numero}")
 
     for contador in range(11):
-        oprecion = numero*contador
-        print(f"{numero} x {contador} = {oprecion}")
+        operacion = numero*contador
+        print(f"{numero} x {contador} = {operacion}")
     print("\n")
 
 
