@@ -16,7 +16,7 @@ print(persona["apellidos"])  # acceder a uno en concreto
 # Lista con diccionarios
 
 contactos = [
-    {                                       # Indice 0
+    {                                           # Indice 0
         'Nombre': 'Juan Manuel',
         'Email': 'Joan151006@gmail.com'
     },
@@ -27,7 +27,11 @@ contactos = [
     {                                           # Indice 2
         'Nombre': 'Arnau',
         'Email': 'Arnaubarriogil@gmail.com'
-    }
+    },
+    {                                           # Indice 3
+        'Nombre': 'Laia',
+        'Email': 'Laia.bagi@alumne.escolabalmes.com'
+    },
 ]
 print(contactos)
 print(contactos[0]['Nombre'])  # mostrara el indice 0 y el nombre
@@ -42,6 +46,7 @@ print("\nListado de contactos")
 print("-----------------------------------------------")
 for contacto in contactos:
     print(f'Nombre del contacto: {contacto["Nombre"]}')
-    print(f'Email  del contacto: {contacto["Email"]}')
+    print(f'Email del contacto: {contacto["Email"]}')
     print("-----------------------------------------------")
     print()
+
