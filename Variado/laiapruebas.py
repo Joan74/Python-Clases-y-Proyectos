@@ -1,4 +1,4 @@
-opcion = 0
+
 
 nombre = input("\nIntroduce tu nombre: ")
 edad = int(input("Introduce tu edad: "))
