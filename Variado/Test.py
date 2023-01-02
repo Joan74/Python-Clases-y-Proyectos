@@ -1,7 +1,7 @@
 import time
 import os
 os.system("clear")
-opcion = 0
+
 aciertos = 0
 fallos = 0
 si = False
