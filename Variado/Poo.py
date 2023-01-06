@@ -22,6 +22,7 @@ list.append(Pregunta(2, "¿Formula del Agua?", "C3PO,CO2,H2O",
                      "El agua es una sustancia cuya molécula está compuesta por dos átomos de hidrógeno y uno de oxígeno unidos por un enlace covalente"))
 list.append(Pregunta(0, "¿Capital de Cataluña?", "Barcelona,Madrid,Bilbao,Valencia,Sevilla",
                      "Barcelona, la capital cosmopolita de la región de Cataluña en España, es conocida por su arte y arquitectura."))
+list.append(Pregunta(1, "La luna es un satelite de jupiter?", "Si,No"))
 
 for obj in list:
     while True:
