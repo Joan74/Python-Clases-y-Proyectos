@@ -5,7 +5,7 @@ nombre.
 Para acceder a esos valores podemos usar un indice numerico-
 """
 
-pelicula = "Matrix"
+
 # Definir lista
 peliculas = ["Matrix", "Reload", "Revolution",
              "Resurrections"]  # Pasar lista (mejor opcion)

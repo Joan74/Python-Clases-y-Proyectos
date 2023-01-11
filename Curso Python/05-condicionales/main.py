@@ -20,7 +20,7 @@ else:
 
 # operadores logicos
 and y
-or  0
+or  O
 !   negacion
 not no tambien lo contrario
 
@@ -84,7 +84,7 @@ else:
     print(f"{nombre} NO es mayor de edad")
 
 
-"""
+
 
 # Ejemplo 4
 
@@ -179,7 +179,6 @@ if pais != "Mexico" and pais != "london" and pais != "grecia" and pais != "spain
 else:
     print(f"{pais} Si es pais de habla hispan")    
 
-"""
 
 
 

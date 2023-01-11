@@ -7,7 +7,6 @@ OK - Ordenarla y mostrarla
 OK - Mostrar su longitud
 OK - Buscar algun elemento que el usuario pida por teclado
 
-  
 """
 # Crear lista
 
