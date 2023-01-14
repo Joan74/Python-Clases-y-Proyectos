@@ -13,6 +13,7 @@ def demanda():
     n2 = int(input("Introduce numero 2: "))
     if n1 < n2:
         for numero in range(n1,n2):
+            print(len(numero))
             print(numero) 
             
     else:
