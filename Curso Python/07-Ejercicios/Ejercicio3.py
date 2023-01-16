@@ -6,7 +6,7 @@ resolver con for y con while
 
 
 """
-contador = 0
+contador = 1
 
 while contador in range(61):
     cuadrado = contador*contador
@@ -15,11 +15,12 @@ while contador in range(61):
     contador += 1
 
 
-print("------------------------------------------------")
+print("\n------------------------------------------------")
+print()
 # se multiplicara por el numero
 # For
 
-for numero in range(61):
+for numero in range(61+1):
 
     cuadrado = numero*numero
     print(f"el cuadrado de {numero} es {cuadrado}")

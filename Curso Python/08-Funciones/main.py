@@ -17,7 +17,7 @@ print("############ EJEMPLO 1 ############")
 
 
 def muestraNombre():  # Define la funcion
-    print("Juanma")
+    print("Juanma", "Marga""\nArnau""\nLaia")
     print("Marga")
     print("Arnau")
     print("Laia")

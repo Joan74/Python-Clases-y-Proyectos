@@ -7,9 +7,6 @@ todos los numeros pares hasta el 120
 
 print("################ EJERCICIO2 ################")
 
-
-contador = 1
-
 for contador in range(1, 121):
     if contador % 2 == 0:
         print(f"{contador}: Es Par")
