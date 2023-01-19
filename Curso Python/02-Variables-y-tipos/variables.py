@@ -5,14 +5,14 @@ y que cada una contenga un dato distinto
 """
 # Crear Variables y dar un valor
 
-texto3 = "Curso de:"
-texto = "Master en Python"
-texto2 = "Don quijote"
+texto = "Curso de:"
+texto2 = "Master en Python"
+texto3 = "Don quijote"
 print("-------------------------------------------")
 # mostar valor variables 
-print(texto3)
-print(texto2)
 print(texto)
+print(texto2)
+print(texto3)
 print("-------------------------------------------")
 # Reasignar valores sustituir
 
