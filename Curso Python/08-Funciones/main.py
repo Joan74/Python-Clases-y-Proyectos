@@ -13,7 +13,7 @@ nombredeMiFuncion(mi_parametro)
 
 # EJEMPLO 1
 
-print("############ EJEMPLO 1 ############")
+print("\n############ EJEMPLO 1 ############")
 
 
 def muestraNombre():  # Define la funcion
@@ -29,7 +29,7 @@ muestraNombre()  # Se puede invocar tantas veces quieras
 
 # EJEMPLO 2: Parametros
 
-print("############ EJEMPLO 2 ############")
+print("\n############ EJEMPLO 2 ############")
 
 
 def mostraTuNombre():
@@ -73,7 +73,7 @@ print()
 print("-------------------------------------------")
 # EJEMPLO 3
 
-print("############ EJEMPLO 3 ############")
+print("\n############ EJEMPLO 3 ############")
 
 def tabla(numero):
     print(f"Tabla de multiplicar {numero}")
@@ -96,7 +96,7 @@ for numero_tabla in range(1, 11):
 print("-------------------------------------------")
 # EJEMPLO 4
 
-print("############ EJEMPLO 4 ############")
+print("\n############ EJEMPLO 4 ############")
 
 # Parametros opcionales
 
@@ -114,7 +114,7 @@ print("-------------------------------------------")
 
 # EJEMPLO 5: Parametros opcionales y Return o devolver datos
 
-print("############ EJEMPLO 5 ############")
+print("\n############ EJEMPLO 5 ############")
 
 
 def saludame(nombre):
@@ -127,7 +127,7 @@ print(saludame("Juanma"))
 print("-------------------------------------------")
 # EJEMPLO 6:  Calculadora en Str
 
-print("############ EJEMPLO 6 ############")
+print("\n############ EJEMPLO 6 ############")
 
 
 def calculadora(numero1, numero2,):
@@ -182,7 +182,7 @@ print(calculadora(54, 4, True))
 print("-------------------------------------------")
 # EJEMPLO 7:  Funciones dentro de funciones
 
-print("############ EJEMPLO 7 ############")
+print("\n############ EJEMPLO 7 ############")
 
 
 def getNombre(nombre):

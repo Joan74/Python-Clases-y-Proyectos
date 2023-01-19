@@ -3,7 +3,7 @@ Hacer un programa que muestre tos los numeros imapares
 entre dos numeroa que elija el usuario
 
 """
-print("######### Numeros impares ########\n")
+print("\n######### Numeros impares ########")
 
 numero1 = int(input(f" Introduce primer numero: "))
 numero2 = int(input(f" Introduce segundo numero: "))
