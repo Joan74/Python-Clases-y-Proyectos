@@ -27,7 +27,7 @@ def MostraLista(lista):
 for numero in numeros:
     print(numero)
 
-numero.
+
 
 
 
