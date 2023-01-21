@@ -1,43 +1,23 @@
+def calculador(n1, n2, basicas=False):
 
-# print("\n\n\nHola mundo soy junama!!! Y me voy afuma un cigarro")
-# # --------------- button -------------------
+    suma = n1+n2
+    resta = n1-n2
+    multi = n1*n2
+    divi = n1/n2
 
+    cadena = ""
+    if basicas == False:
 
-# # ----------------- multillp----------
-# """
-# bkhn ,mnkhvgujb lm -.lckhbñ-n j
-
-
-
-
-
-# """
-
-print("\n\n")
-
-nombre = input("Introduce tu nombre: ")
-edad = int(input("Introduce tu edad: "))
-sexo = input("Introduce tu sexo: ")
-movil = int(input("Introduce el movil: "))
-if edad >= 18:
-    if sexo == "gay":
-         print("mariquita")
+        cadena += "Suma" + str(suma)
+        cadena += "\n"
+        cadena += "Resta" + str(resta)
+        cadena += "\n"
     else:
-        print(f"\nmi nombre es {nombre} y mi edad es {edad} tu {movil} y tu sexo es {sexo}")
+        cadena += "Multiplicacion" + str(multi)
+        cadena += "\n"
+        cadena += "Division" + str(divi)
 
-    
-    
-    
+    return cadena
 
-    
-    
-else:
-    print("Eres menor de edad y necesitas consentimiento")
 
-    
-    
-    
-    
-    
-    
-    print("\n-----------------------------------------------------")
+print(calculador(5, 5,True ))
