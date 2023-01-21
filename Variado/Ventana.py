@@ -9,7 +9,7 @@ ventana = tkinter.Tk()
 ventana.title("----- Test General -----")
 
 ventana.geometry("300x700")
-ventana.resizable(0, 0)
+ventana.resizable(0, 1)
 valor = StringVar()
 valor.set('Verdadero')
 botonVerdad = valor,1
@@ -203,10 +203,11 @@ boton2.place(x=10, y=20)
 
 # ------------------ IMAGEN ---------------------
 
-# from tkinter import *
-# img = tkinter.PhotoImage(file="/Users/juanma/Documents/Hello-Python-main/Python Clases y Proyectos/Variado/fondo.jpg")
-# lbl_img = tkinter.Label(ventana, image=img)
-# lbl_img.pack()
+
+img = tkinter.PhotoImage(file="/Users/juanma/Desktop/RADIO/1674218798343.png")
+lbl_img = tkinter.Label(ventana, image = img)
+
+lbl_img.pack()
 
 
 ventana.mainloop()  # Arrancara el programa en ventana

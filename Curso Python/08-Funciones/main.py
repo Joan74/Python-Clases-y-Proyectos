@@ -212,7 +212,7 @@ print("-------------------------------------------")
 print("############ EJEMPLO 8 ############")
 
 
-def dime_el_year(year): return f"El año es {year}"
+def dime_el_year(year): return f"El año es {year*10}"
 
 
 print(dime_el_year(2022))
