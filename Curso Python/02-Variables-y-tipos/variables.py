@@ -1,5 +1,5 @@
 """
-Una variable es un contenedordeinfomación
+Una variable es un contenedor de infomación
 que dentro guardxara un dato, se pueden creaar muchas variables
 y que cada una contenga un dato distinto
 """
@@ -39,5 +39,4 @@ print("Hola me llamo {} {} y mi web es: {} ".format(nombre, apellidos,web) )
 print(f"{nombre} {apellidos} - {web}")
 
 print(nombre, apellidos, web)
-
 
