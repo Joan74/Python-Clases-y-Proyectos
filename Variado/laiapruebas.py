@@ -1,40 +1,30 @@
-juegos = [
-    "Fornite","NFS","Crash"
-]
-
-print(juegos)
-
-nuevo_juego = ""
-while nuevo_juego != "parar":
-    nuevo_juego = input("Introduce nuevo juego: ")
-    if nuevo_juego != "parar":
-        juegos.append(nuevo_juego)
-for pelicula in juegos:
-    print(pelicula)
+def numero_usuario(numero1):
+    numero1 = int(input("Introduce un numero: "))
+    return numero1
 
 
-# print("\n******************** CONTACTOS *********************")
 
-# contactos = [
-#    [ 
-#         'Laia',
-#         'LaiaGilMuños@icloud.com'
+def calculadora(numero1, numero2,):
 
-#    ],
-#    [
-#         'Juanma',
-#         'joan151006@gmail.com'
-#    ]
-# ]
+    suma = numero1 + numero2
+    resta = numero1 - numero2
+    multi = numero1 * numero2
+    divi = numero1 / numero2
 
-# for contacto in contactos:
-#     for elemento in contacto:
-#         if contacto.index(elemento) == 0:
-#             print("Nombre: " + elemento)
-       
-#         else:
-#             print("Email: " + elemento)
-#     print()
+    cadena = " "
+
+    cadena += "Suma: " + str(suma)
+    cadena += ("\n")
+    cadena += "Resta: " + str(resta)
+    cadena += ("\n")
+    cadena += "Multiplicacion: " + str(multi)
+    cadena += ("\n")
+    cadena += "Division: " + str(divi)
+
+    return cadena
+
+print(numero_usuario(5))
+print(calculadora(numero_usuario))
 
 
 
@@ -48,3 +38,39 @@ for pelicula in juegos:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def calculadora ():
+#     resultado = ""
+#     resultado += f"La SUMA de {numero_usuario} es {numero_usuario+numero_usuario}"
+#     resultado += "\n"
+#     resultado += f"La RESTA de {numero_usuario} es {numero_usuario-numero_usuario}"
+#     resultado += "\n"
+#     resultado += f"La MULTIPLICACION de {numero_usuario} es {numero_usuario*numero_usuario}"
+#     resultado += "\n"
+#     resultado += f"La DIVISION de {numero_usuario} es {numero_usuario/numero_usuario}"
+#     return resultado
+
+# numero_usuario(calculadora)

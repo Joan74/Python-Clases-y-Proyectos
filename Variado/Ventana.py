@@ -8,14 +8,26 @@ import os
 ventana = tkinter.Tk()
 ventana.title("----- Test General -----")
 
-ventana.geometry("300x700")
+ventana.geometry("1200x700")
 ventana.resizable(0, 1)
 valor = StringVar()
 valor.set('Verdadero')
 botonVerdad = valor,1
 botonFalso = valor,2
 
+# ------------------ IMAGEN ---------------------
 
+
+img = tkinter.PhotoImage(file="/Users/juanma/Desktop/fondo.png")
+
+
+lbl_img = tkinter.Label(ventana, image = img)
+
+
+lbl_img.pack()
+
+
+ventana.mainloop()  # Arrancara el programa en ventana
 
 
     
@@ -186,8 +198,8 @@ def salir():
 
 # Boton AUX
 boton = tkinter.Button(ventana, text="TEST", command=testCultural,).pack()
-#botoNVerdad = tkinter.Button(ventana, text="VERDADERO", command= True,).pack()
-#botonFalso = tkinter.Button(ventana, text="FALSO", command= False,).pack()
+botoNVerdad = tkinter.Button(ventana, text="VERDADERO", command= True,).pack()
+botonFalso = tkinter.Button(ventana, text="FALSO", command= False,).pack()
 
 
 #boton.place(x=10, y=20)
@@ -201,13 +213,4 @@ boton2.place(x=10, y=20)
 # tkinter.messagebox.showinfo("Test 1", "Comenzamos el Test!!")
 
 
-# ------------------ IMAGEN ---------------------
 
-
-img = tkinter.PhotoImage(file="/Users/juanma/Desktop/RADIO/1674218798343.png")
-lbl_img = tkinter.Label(ventana, image = img)
-
-lbl_img.pack()
-
-
-ventana.mainloop()  # Arrancara el programa en ventana
