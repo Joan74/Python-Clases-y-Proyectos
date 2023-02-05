@@ -2,8 +2,8 @@ print()
 import os
 os.system ("clear")
 
-n1 = (input("Introduce el primer numero: "))
-n2 = (input("Introduce el segundo numero: "))
+n1 = int(input("Introduce el primer numero: "))
+n2 = int(input("Introduce el segundo numero: "))
 opcion = 0
 while True:
     print("""

@@ -23,3 +23,4 @@ def calculadora(numero1, numero2, basicas=False):
     return cadena
 
 
+print(calculadora())
