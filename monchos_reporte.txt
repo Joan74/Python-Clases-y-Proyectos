@@ -1,0 +1,14 @@
+Información del servicio:
+Nombre del servicio: monchos
+Fecha de inicio: 18/03/2023
+Fecha de fin: 18/03/2023
+Precio del servicio: $78.0
+
+Horas trabajadas por día:
+Día 1: 4.0 horas
+
+Costo por día del servicio: $78.0
+Total de horas extras: 0 horas
+Costo por horas extras: $0.0
+
+Costo total del servicio: $82.0
