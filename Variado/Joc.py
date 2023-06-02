@@ -1,107 +1,132 @@
-import os
-os.system("clear")
 import random
+import time
+import os
+os.system("clear") 
 
-def dibujar_ahorcado(intentos):
-    dibujo = [
-        '''
-           +---+
-           |   |
-               |
-               |
-               |
-               |
-        =========''',
-        '''
-           +---+
-           |   |
-           O   |
-               |
-               |
-               |
-        =========''',
-        '''
-           +---+
-           |   |
-           O   |
-           |   |
-               |
-               |
-        =========''',
-        '''
-           +---+
-           |   |
-           O   |
-          /|   |
-               |
-               |
-        =========''',
-        '''
-           +---+
-           |   |
-           O   |
-          /|\\  |
-               |
-               |
-        =========''',
-        '''
-           +---+
-           |   |
-           O   |
-          /|\\  |
-          /    |
-               |
-        ========='''
-    ]
+print("---------------------------------------------")
+print("Benvingut al PENJAT de objectes de la compra!")
+print("---------------------------------------------")
+time.sleep(2)
 
-    print(dibujo[intentos])
+print("\nCom et dius?")
+print()
+nom = input()
+time.sleep(2)
 
-def ahorcado():
-    palabras = ["python", "programacion", "juego", "ordenador", "desarrollo"]
-    palabra_secreta = random.choice(palabras)
+print(f"\n{nom.upper()}, ""ara et posaré espais buits de cada lletra i tindràs 5 intents per endevinar el nombre.")
+time.sleep(2)
+
+def jugar_ahorcado():
+    palabras = ["pa", "llet", "aigua", "sal", "iogurt", "ous", "sucre", "patates", "gelats",
+               "ketchup", "macarrons", "pernil", "formatge", "paper", "galetes", "cereals", "carn", "suc"]
+    palabra = random.choice(palabras)
     intentos = 5
     letras_adivinadas = []
-
+    dibujo = [
+                                """             
+                                   +---+
+                                       |
+                                       |
+                                       |
+                                      ===""",
+                                """
+                                   +---+
+                                   O   |
+                                       |
+                                       |
+                                      ===""",
+                                """
+                                   +---+
+                                   O   |
+                                   |   |
+                                       |
+                                      ===""",
+                                """
+                                   +---+
+                                   O   |
+                                  /|   |
+                                       |
+                                      ===""",
+                                """
+                                   +---+
+                                   O   |
+                                  /|\  |
+                                       |
+                                      ===""",
+                                """
+                                   +---+
+                                   O   |
+                                  /|\  |
+                                  /    |
+                                      ===""",
+                                """
+                                   +---+
+                                   O   |
+                                  /|\  |
+                                  / \  |
+                                      ==="""
+    ]
+    
     while intentos > 0:
-        # Mostrar el dibujo del ahorcado
-        dibujar_ahorcado(5 - intentos)
-
-        # Mostrar el estado actual del juego
-        palabra_mostrada = ""
-        for letra in palabra_secreta:
-            if letra in letras_adivinadas:
-                palabra_mostrada += letra + " "
-            else:
-                palabra_mostrada += "_ "
-        print(palabra_mostrada)
-
-        if palabra_mostrada == palabra_secreta:
-            print("¡Felicidades! ¡Has adivinado la palabra!")
+        # Mostrar el dibujo actual del ahorcado
+        mostrar_dibujo(dibujo, intentos)
+        
+        # Mostrar la palabra con las letras adivinadas y guiones bajos para las no adivinadas
+        mostrar_palabra(palabra, letras_adivinadas)
+        
+        if palabra_adivinada(palabra, letras_adivinadas):
+            print(f"¡Felicitats! {nom} ¡Has adivinat la paraula correcta!!!!!")
             break
-
-        # Pedir al usuario una letra
-        entrada = input("Ingresa una letra: ").lower()
-
-        if len(entrada) != 1:
-            print("Ingresa solo una letra válida.")
+        
+        letra = input("\nAfegeix una lletra: ")
+        
+        if len(letra) != 1:
+            print("Per favor, ingresa solament una lletra.")
             continue
-
-        letra_usuario = entrada
-
-        if letra_usuario in letras_adivinadas:
-            print("Ya has ingresado esa letra. ¡Intenta con otra!")
+        
+        if letra in letras_adivinadas:
+            print("lletra duplicada. Intenta un Altre.")
             continue
-
-        if letra_usuario in palabra_secreta:
-            letras_adivinadas.append(letra_usuario)
+        
+        if letra in palabra:
+            letras_adivinadas.append(letra)
         else:
+            print("Lletra incorrecta.")
             intentos -= 1
-            print("Letra incorrecta. Te quedan {} intentos.".format(intentos))
-
+            print("Et queden {} intents.".format(intentos))
+        
     if intentos == 0:
-        dibujar_ahorcado(5)  # Dibujo final del ahorcado
-        print("Lo siento, has perdido. La palabra correcta era '{}'.".format(palabra_secreta))
+        # Mostrar el dibujo final del ahorcado
+        mostrar_dibujo(dibujo, intentos)
+        print("¡¡¡¡T´has quedat sense intents. La paraula correcta es ####'{}'####.".format(palabra))
+    
+    jugar_nuevamente = input("¿Vols Jugar un altre cop? (s/n): ")
+    
+    if jugar_nuevamente.lower() == "s":
+        time.sleep(1)
+        os.system("clear")
+        jugar_ahorcado()
+    else:
+        print("¡Gracies per jugar! ¡Fins Aviat!")
+        time.sleep(3)
+        os.system("clear")
 
-# Ejemplo de uso
-print("Bienvenido al juego del ahorcado.")
-ahorcado()
+def mostrar_palabra(palabra, letras_adivinadas):
+    for letra in palabra:
+        if letra in letras_adivinadas:
+            print(letra, end=" ")
+        else:
+            print("_", end=" ")
+    print()
+
+def palabra_adivinada(palabra, letras_adivinadas):
+    for letra in palabra:
+        if letra not in letras_adivinadas:
+            return False
+    return True
+
+def mostrar_dibujo(dibujo, intentos):
+    print(dibujo[6 - intentos])
+
+print("¡Benvingut al joc del Penjat!")
+jugar_ahorcado()
